@@ -1,0 +1,149 @@
+/* General App Styles */
+.App {
+  max-height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  background-color: #474747;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.left-container {
+  position: relative;
+  flex: 60%;
+  height: calc(100vh - 50px);
+  padding: 10px;
+  background-color: #2e2e2e;
+}
+
+.right-container {
+  flex: 40%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  border-left: 3px solid #1f65e6;
+  padding: 10px;
+}
+
+/* Input Box */
+.input-box {
+  flex: 50%;
+}
+
+.input-box textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.input-box textarea:focus {
+  outline: none;
+}
+
+/* Spinner Box */
+.spinner-box {
+  flex: 50%;
+  background-color: #242424;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-box img {
+  width: 200px;
+}
+
+/* Output Box */
+.output-box {
+  flex: 50%;
+  background-color: #242424;
+  overflow-y: auto;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.output-box pre {
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Ensure buttons are positioned correctly */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space between Run and Clear Code buttons */
+  margin-top: 10px; /* Space above buttons */
+  padding: 10px;
+}
+
+.run-btn, .clear-btn {
+  width: 48%; /* Adjust width for proper alignment */
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Run Button Styles */
+.run-btn {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.run-btn:hover {
+  background-color: #45a049; /* Darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.run-btn:active {
+  background-color: #3d8b40; /* Even darker green */
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Clear Code Button Styles */
+.clear-btn {
+  background-color: #f44336; /* Red color */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn:hover {
+  background-color: #e53935; /* Darker red */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn:active {
+  background-color: #c62828; /* Even darker red */
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Typography */
+h4 {
+  color: #afec3f;
+}
+
+/* Add spacing for buttons */
+.button-container {
+  margin-top: 10px;
+}
